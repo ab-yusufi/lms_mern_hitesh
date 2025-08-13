@@ -1,3 +1,3 @@
-# React Native Todo App
+# lms_mern_hitesh
 
-This is a full stack todo app using React Native. I have used Convex for backend
+This is Learning Management System I made during the course Web Development course of Hitesh Choudhary
