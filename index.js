@@ -10,6 +10,8 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import mongoSanitize from "express-mongo-sanitize";
 
+import healthRoute from "./routes/health.route.js";
+
 const app = express();
 const PORT = process.env.PORT;
 
@@ -63,7 +65,9 @@ app.use(
     ],
   })
 );
+
 //API Routes
+app.use("/api/v1/healthcheck", healthRoute);
 
 //It should be always at bottom
 //404 handler
